@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **📢 The third edition is now available!** Check out the new repository for **AI-Assisted Statistics for Data Scientists**:
+> 👉 https://github.com/gedeck/ai-assisted-statistics-for-data-scientists
+>
+> This repository will no longer be maintained. Please file any issues or pull requests against the [new repository](https://github.com/gedeck/ai-assisted-statistics-for-data-scientists).
+
 [![](https://img.shields.io/badge/python-3.8--3.12-blue.svg)](https://www.python.org/downloads/)
 ![Python](https://github.com/gedeck/dmba/actions/workflows/build.yml/badge.svg)
 
@@ -27,7 +33,7 @@ by Peter Bruce, Andrew Bruce, and <a href="https://www.amazon.com/Peter-Gedeck/e
 View the notebooks online:
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/gedeck/practical-statistics-for-data-scientists/tree/master/)
 
-Excecute the notebooks in Binder:
+Execute the notebooks in Binder:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gedeck/practical-statistics-for-data-scientists/HEAD)
 
  This can take some time if the binder environment needs to be rebuilt.
@@ -161,14 +167,14 @@ Excecute the notebooks in Binder:
 - The code repository for the first edition is at: <a href="https://github.com/andrewgbruce/statistics-for-data-scientists">https://github.com/andrewgbruce/statistics-for-data-scientists</a>
 
 
-# Setup of R and Python environments
+# Setup of R and Python environment
 
 We recommend using a conda environment to run the Python and R code.
 
 ```
 conda create -n sfds #Create the conda environment named sfds.
 conda activate sfds #Activate the environment we created.
-conda env update -n sfds -f environment.yml #Update the depencies of the environment from environment.yml 
+conda env update -n sfds -f environment.yml #Update the dependencies of the environment from environment.yml 
 ```
 
 The full list of Python and R dependencies from the [environment.yml](environment.yml) file:

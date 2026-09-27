@@ -173,7 +173,10 @@ ax.set_ylabel('Counts')
 fig, ax = plt.subplots(figsize=(4, 4))
 
 norm_sample = stats.norm.rvs(size=100)
-stats.probplot(norm_sample, plot=ax)
+# Use fit=False to disable the default fitting of a line to the sample data (least-squares regression).
+stats.probplot(norm_sample, plot=ax, fit=False)
+# Plot the diagonal representing the standardized normal distribution.
+ax.axline((0, 0), (1, 1), color='grey')
 
 plt.tight_layout()
 plt.show()
@@ -186,7 +189,10 @@ nflx = sp500_px.NFLX
 nflx = np.diff(np.log(nflx[nflx>0]))
 
 fig, ax = plt.subplots(figsize=(4, 4))
-stats.probplot(nflx, plot=ax)
+# Use fit=False to disable the default fitting of a line to the sample data (least-squares regression).
+stats.probplot(nflx, plot=ax, fit=False)
+# Plot the diagonal representing the standardized normal distribution.
+ax.axline((0, 0), (1, 1), color='grey')
 
 plt.tight_layout()
 plt.show()
